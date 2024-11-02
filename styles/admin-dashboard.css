@@ -1,0 +1,136 @@
+/* styles/admin-dashboard.css */
+
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #D2B48C; /* Mocha background color */
+    color: #333;
+}
+
+header {
+    background-color: #8B4513; /* Darker Mocha for header */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #8B4513; /* Darker Mocha for headings */
+}
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+}
+
+.stat {
+    background-color: #fff;
+    border: 1px solid #8B4513;
+    border-radius: 5px;
+    padding: 15px;
+    width: 30%;
+    text-align: center;
+}
+
+.stat h3 {
+    color: #8B4513; /* Darker Mocha for stat titles */
+}
+
+button {
+    background-color: #8B4513; /* Darker Mocha for buttons */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #6F3F2A; /* Slightly lighter Mocha for hover */
+}
+
+footer {
+    background-color: #8B4513; /* Darker Mocha for footer */
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.post-management {
+    background-color: #fff;
+    border: 1px solid #8B4513;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.post-management h2 {
+    color: #8B4513; /* Darker Mocha for section heading */
+}
+
+.post-management form {
+    display: flex;
+    flex-direction: column;
+}
+
+.post-management label {
+    margin-bottom: 5px;
+}
+
+.post-management input, .post-management textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #8B4513;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.post-management button {
+    background-color: #8B4513; /* Darker Mocha for button */
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.post-management button:hover {
+    background-color: #6F3F2A; /* Slightly lighter Mocha for hover */
+}

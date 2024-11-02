@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - Daily Blog</title>
+    <link rel="stylesheet" href="styles/admin-dashboard.css">
+</head>
+<body>
+    <header>
+        <h1>Admin Dashboard</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="admin-dashboard.html">Dashboard</a></li>
+                <li><a href="logout.html">Log Out</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="overview">
+            <h2>Overview</h2>
+            <div class="stats">
+                <div class="stat">
+                    <h3>Total Posts</h3>
+                    <p id="totalPosts">0</p>
+                </div>
+                <div class="stat">
+                    <h3>Total Comments</h3>
+                    <p id="totalComments">0</p>
+                </div>
+                <div class="stat">
+                    <h3>Total Users</h3>
+                    <p id="totalUsers">0</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="management">
+            <h2>Manage Content</h2>
+            <div class="actions">
+                <button onclick="window.location.href='manage-posts.html'">Manage Posts</button>
+                <button onclick="window.location.href='manage-comments.html'">Manage Comments</button>
+                <button onclick="window.location.href='manage-users.html'">Manage Users</button>
+                <button onclick="window.location.href='site-settings.html'">Site Settings</button>
+            </div>
+        </section>
+
+        <section class="post-management">
+            <h2>Create a New Post</h2>
+            <form id="postForm">
+                <label for="title">Title:</label>
+                <input type="text" id="title" name="title" required>
+
+                <label for="content">Content:</label>
+                <textarea id="content" name="content" rows="4" required></textarea>
+
+                <label for="image">Image URL (optional):</label>
+                <input type="text" id="image" name="image">
+
+                <button type="submit">Post</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Daily Blog. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts/admin-dashboard.js"></script>
+</body>
+</html>

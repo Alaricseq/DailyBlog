@@ -1,0 +1,129 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #D2B48C; /* Mocha color */
+    line-height: 1.6;
+}
+
+header {
+    text-align: center;
+    padding: 2rem;
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #eaeaea;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    border-bottom: 1px solid #eaeaea;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    position: relative;
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 1rem;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: #f8f8f8;
+}
+
+nav ul .sub-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    border: 1px solid #eaeaea;
+    padding: 0;
+    list-style: none;
+    min-width: 150px;
+}
+
+nav ul li:hover .sub-menu {
+    display: block;
+}
+
+nav ul .sub-menu li {
+    margin: 0;
+}
+
+nav ul .sub-menu li a {
+    padding: 0.5rem 1rem;
+    white-space: nowrap;
+}
+
+nav ul .sub-menu li a:hover {
+    background-color: #f0f0f0;
+}
+
+main {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+main section {
+    margin-bottom: 2rem;
+}
+
+main section h2 {
+    margin-top: 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 1rem;
+}
+
+input, textarea, button {
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 3px;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #f8f8f8;
+    border-top: 1px solid #eaeaea;
+}
